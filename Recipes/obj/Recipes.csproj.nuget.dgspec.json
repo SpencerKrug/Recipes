@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj": {}
+    "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj": {}
   },
   "projects": {
-    "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj": {
+    "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj",
+        "projectUniqueName": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj",
         "projectName": "Recipes",
-        "projectPath": "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj",
+        "projectPath": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj",
         "packagesPath": "C:\\Users\\spncr\\.nuget\\packages\\",
-        "outputPath": "C:\\Sandbox\\Recipes\\Recipes\\obj\\",
+        "outputPath": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Microsoft\\Xamarin\\NuGet\\"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,7 +30,7 @@
           "https://nuget.devexpress.com/wHirWdUoGlVWMZUuYYzKMGglMylkPwJg9YRiHD37axPlepf6Bf/api": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
             "projectReferences": {}
           }
         },
@@ -41,7 +41,7 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
           "dependencies": {
             "DevExpress.Blazor": {
               "target": "Package",
@@ -49,23 +49,23 @@
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.0-preview.5.20279.2, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.0-preview.5.20279.2, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.0-preview.5.20279.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.0-preview.5.20278.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[5.0.0-preview.5.20278.2, )"
             }
           },
           "imports": [
@@ -78,12 +78,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "F:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "F:\\Program Files\\dotnet\\sdk\\5.0.100-preview.5.20279.10\\RuntimeIdentifierGraph.json"
         }
       }
     }
