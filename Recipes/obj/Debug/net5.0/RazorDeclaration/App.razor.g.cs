@@ -64,27 +64,13 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 8 "C:\Sandbox\Recipes\Recipes\_Imports.razor"
-using Recipes.Shared;
+using Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "C:\Sandbox\Recipes\Recipes\_Imports.razor"
-using Recipes.Services;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 10 "C:\Sandbox\Recipes\Recipes\_Imports.razor"
-using Recipes.Pages;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 11 "C:\Sandbox\Recipes\Recipes\_Imports.razor"
 using DevExpress.Blazor;
 
 #line default
