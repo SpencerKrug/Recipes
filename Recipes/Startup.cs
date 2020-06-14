@@ -15,6 +15,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Recipes.Areas.Identity;
 using Recipes.Data;
+using Recipes.Data.Contexts;
+using Recipes.Data.Repositories.Interfaces;
+using Recipes.Data.Repositories;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Recipes.Services.Interfaces;
+using Recipes.Services;
 
 namespace Recipes
 {
@@ -39,7 +45,11 @@ namespace Recipes
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
-            services.AddSingleton<WeatherForecastService>();
+
+            services.AddDbContext<RecipesDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IRecipesRepository, RecipesRepository>();
+            services.AddScoped<IRecipesService, RecipesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

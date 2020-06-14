@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jWq7vK377sPaKi03bXQoIbCzerNveqad+TMhP7mCO5laYit64T9dBKU8/QONTPYFYDHDdJOxsyG2qkiHM3mfjQ==",
+  "dgSpecHash": "SB70A4eNdZMHO+6yCPkVKvSe3vxQvabZArSaAWZKp7KuL/ZibrmU5xzqAzYC7yrJKgFY82DKgLrEURPkazSzJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj",
+  "projectFilePath": "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\spncr\\.nuget\\packages\\devexpress.blazor\\20.1.4\\devexpress.blazor.20.1.4.nupkg.sha512",
     "C:\\Users\\spncr\\.nuget\\packages\\devextreme.aspnet.data\\2.6.1\\devextreme.aspnet.data.2.6.1.nupkg.sha512",

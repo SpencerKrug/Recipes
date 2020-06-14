@@ -1,0 +1,9 @@
+﻿@page  "/Recipes"
+@inherits RecipeBases
+
+<h3>Recipes</h3>
+
+@foreach(var recipe in RecipesList)
+{
+    <p>@recipe</p><br />
+}

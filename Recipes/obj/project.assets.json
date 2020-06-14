@@ -6080,11 +6080,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj",
+      "projectUniqueName": "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj",
       "projectName": "Recipes",
-      "projectPath": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\Recipes.csproj",
+      "projectPath": "C:\\Sandbox\\Recipes\\Recipes\\Recipes.csproj",
       "packagesPath": "C:\\Users\\spncr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spncr\\source\\repos\\Recipes\\Recipes\\obj\\",
+      "outputPath": "C:\\Sandbox\\Recipes\\Recipes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\Microsoft\\Xamarin\\NuGet\\"
