@@ -1,0 +1,71 @@
+@page "/LanguageModels"
+@inherits LanguageModelBases
+
+<h3>Language Models</h3>
+
+<button class="btn btn-primary mb-3" @onclick="ShowAddForm">Add Language Model</button>
+
+@if (ShowForm && EditingModel != null)
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">@(LanguageModelsList != null && LanguageModelsList.Exists(m => m.LanguageModelId == EditingModel.LanguageModelId) ? "Edit Language Model" : "Add Language Model")</h5>
+            <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" @bind="EditingModel.LanguageModelName" />
+            </div>
+            <div class="form-group">
+                <label>Provider</label>
+                <input class="form-control" @bind="EditingModel.LanguageModelProvider" />
+            </div>
+            <div class="form-group">
+                <label>API Endpoint</label>
+                <input class="form-control" @bind="EditingModel.LanguageModelApiEndpoint" />
+            </div>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" @bind="EditingModel.LanguageModelEnabled" id="enabledCheck" />
+                <label class="form-check-label" for="enabledCheck">Enabled</label>
+            </div>
+            <button class="btn btn-success mr-2" @onclick="SaveLanguageModelAsync">Save</button>
+            <button class="btn btn-secondary" @onclick="CancelForm">Cancel</button>
+        </div>
+    </div>
+}
+
+@if (LanguageModelsList == null)
+{
+    <p>Loading...</p>
+}
+else if (LanguageModelsList.Count == 0)
+{
+    <p>No language models configured.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Provider</th>
+                <th>API Endpoint</th>
+                <th>Enabled</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var model in LanguageModelsList)
+            {
+                <tr>
+                    <td>@model.LanguageModelName</td>
+                    <td>@model.LanguageModelProvider</td>
+                    <td>@model.LanguageModelApiEndpoint</td>
+                    <td>@(model.LanguageModelEnabled ? "Yes" : "No")</td>
+                    <td>
+                        <button class="btn btn-sm btn-warning mr-1" @onclick="() => ShowEditForm(model)">Edit</button>
+                        <button class="btn btn-sm btn-danger" @onclick="() => DeleteLanguageModelAsync(model.LanguageModelId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

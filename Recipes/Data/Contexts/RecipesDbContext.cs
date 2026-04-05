@@ -15,8 +15,10 @@ namespace Recipes.Data.Contexts
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<RecipesModel>().ToTable("tbu_Recipes");
+            builder.Entity<LanguageModelsModel>().ToTable("tbu_LanguageModels");
         }
 
         public DbSet<RecipesModel> RecipesContext { get; set; }
+        public DbSet<LanguageModelsModel> LanguageModelsContext { get; set; }
     }
 }
