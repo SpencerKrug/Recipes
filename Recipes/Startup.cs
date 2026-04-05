@@ -50,6 +50,8 @@ namespace Recipes
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<IRecipesRepository, RecipesRepository>();
             services.AddScoped<IRecipesService, RecipesService>();
+            services.AddScoped<ILanguageModelsRepository, LanguageModelsRepository>();
+            services.AddScoped<ILanguageModelsService, LanguageModelsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
